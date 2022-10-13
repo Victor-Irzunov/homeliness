@@ -689,8 +689,6 @@ overflow: hidden;
 .copirait span{
 	color: rgb(12, 242, 255);
 }
-
-/* //-----------------------------------------1200 */
 @media (max-width: 1200px) {
 	.logo img{
 		width: 13em;
@@ -699,7 +697,6 @@ overflow: hidden;
 		font-size: 8em;
 	}
 }
- /* //----------------------------------------1080 */
 @media (max-width: 1080px) {
 	.logo img{
 		width: 11em;
@@ -711,13 +708,11 @@ overflow: hidden;
 		font-size: 1em;
 	}
 }
- /* //-----------------------------------------1024 */
 @media (max-width: 1024px) {
 	header ul li a{
 		margin: 0 8px;
 	}
 }
-/* //-------------------------------------------991 */
 @media (max-width: 991px) {
 	
   header,
@@ -844,13 +839,6 @@ overflow: hidden;
     margin: 20px 0;
   }
 }
-
-/* //------------------------------------------812 */
-@media (max-width: 812px){  
-	
-}
-
- /* //----------------------------------------720 */
 @media (max-width: 720px){
 	.banner h2{
 		font-size: 5em;
@@ -862,8 +850,6 @@ overflow: hidden;
 	width: 80vw;
 }
 }
-
-/* //-----------------------------------------600 */
 @media (max-width: 600px){
   header,
   header.sticky
@@ -879,8 +865,6 @@ overflow: hidden;
     padding: 150px 20px 100px;
   }
 }
-
- /* //----------------------------------------540 */
 @media (max-width: 540px){
   .banner h2 {
     font-size: 4em;
@@ -889,7 +873,6 @@ overflow: hidden;
   font-size: 2em;
 }
 }
- /* //----------------------------------------428 */
 @media (max-width: 428px){
   .banner h2 {
     font-size: 3em;
@@ -927,13 +910,11 @@ section {
   font-size: 3em;
 }
 }
- /* //----------------------------------------375 */
 @media (max-width: 375px) {
   .swiper-slide
 {
   background-position: center;
   background-size: cover;
   width: 320px;
-}
-}
+}}
 
