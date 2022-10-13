@@ -268,9 +268,10 @@
 					<div class="testimonialBox">
 						<img src="img/quote.png" class="quote">
 						<div class="content-swiper">
-							<p>Заказывал услугу балкон под ключ. Меняли окна, утепляли, делали отделку. Ребята приехали на час
-								позже, чем мы договаривались, но всё простительно так как по отделке притензий нет и результатом
-								я доволен.</p>
+							<p>Заказывал услугу балкон под ключ. Меняли окна, утепляли балкон, делали отделку. Ребята приехали
+								на час
+								позже, чем мы договаривались, оказалась причина уважительная, но всё простительно так как я
+								очень доволен и претензий по отделке нету.</p>
 							<div class="details">
 								<div class="imgBx">
 									<img src="img/user-1.webp">
@@ -405,10 +406,14 @@
 			else btn.innerHTML = "Смотреть больше"
 		}
 
+		const token = '5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko'
+		const chat_id = '-1001794221917'
+		const uri_api = `https://api.telegram.org/bot${token}/sendMessage`
+
 		function openModal(props) {
 			document.querySelector('.modal').classList.add('active')
 			document.querySelector('.modal-box h3').innerHTML = `${props}`
-
+			const btn = document.querySelector('.modal-btn')
 
 			document.getElementById('form_id').addEventListener('submit', function (e) {
 				e.preventDefault()
@@ -425,8 +430,10 @@
 					parse_mode: 'html',
 					text: messageForm,
 				}).then(data => {
+					btn.innerHTML = 'Отправлено'
 					setTimeout(() => {
 						closeModal()
+						btn.innerHTML = 'Отправить'
 					}, 2000)
 				}).then(data => {
 					document.getElementById('input_text').value = ''
@@ -434,14 +441,10 @@
 					document.getElementById('input_message').value = ''
 				})
 			})
-
 		}
 		const closeModal = () => document.querySelector('.modal').classList.remove('active')
 
-
-		const token = '5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko'
-		const chat_id = '-1001794221917'
-		const uri_api = `https://api.telegram.org/bot${token}/sendMessage`
+	
 	</script>
 
 </body>
