@@ -74,15 +74,11 @@ section
 {
   padding: 50px 100px;
 }
-
-
-
 .li-tel a{
 	background: rgb(238, 255, 0);
 	padding: 0px 5px 0px 5px;
 	overflow: hidden;
 }
-
 .li-tel a:after{
 content: '';
 position: absolute;
@@ -104,10 +100,6 @@ animation-iteration-count: infinite;
 		left: 130%;
 	}
 }
-
-
-
-
 .modal{
 	width: 100%;
 	height: 100vh;
@@ -153,9 +145,6 @@ padding: 20px 20px 20px 20px;
 #form_id h3{
 	text-align: center;
 }
-
-
-
 .banner
 {
   position: relative;
@@ -215,14 +204,9 @@ padding: 20px 20px 20px 20px;
 	  content: "БАЛКОНОВ";
 	}
  }
-
-
-
 .btn
 {
-  /* position: relative; */
   background: rgba(255, 255, 255, 0.211);
-  /* display: inline-block; */
   color: #fff;
   margin-top: 20px;
   padding: 10px 30px;
@@ -284,9 +268,6 @@ padding: 20px 20px 20px 20px;
 	font-weight: 100;
 	color:#50C9C3;
 }
-
-
-
 .heading
 {
   width: 100%;
@@ -294,7 +275,6 @@ padding: 20px 20px 20px 20px;
   margin-bottom: 30px;
   color: #111;
 }
-
 .conetntBx
 {
   padding-right: 30px;
@@ -313,7 +293,6 @@ padding: 20px 20px 20px 20px;
 {
   min-width: 50%;
 }
-
 .services .heading h2
 {
 	color: #000;
@@ -324,7 +303,6 @@ padding: 20px 20px 20px 20px;
 .services .heading p{
 	color: #000;
 	text-shadow: 1px 13px 5px #aba8a8;
-
 }
 .services .content
 {
@@ -372,8 +350,6 @@ overflow: hidden;
 	font-size: 2.5em;
 	margin-bottom: 1em;
 }
-
-
   button.learn-more {
 	width: 11rem;
 	height: auto;
@@ -458,11 +434,6 @@ overflow: hidden;
   button:hover .button-text {
 	color: #fff;
   }
-
-
-
-
-
 .work .heading h2{
 	color: #000;
 	font-weight: 100;
@@ -492,15 +463,9 @@ overflow: hidden;
 .content.active{
 	display: none;
 }
-
-
-
-
-
 .testimonial{
 	position: relative;
   width: 100%;
-  /* min-height: 100vh; */
 }
 .testimonial h2{
 	color: #000;
@@ -602,9 +567,6 @@ overflow: hidden;
 {
     background-image: none;
 }
-
-
-
 .contact
 {
   background: #00a3a8;
@@ -640,7 +602,6 @@ overflow: hidden;
   background: transparent;
   border: 1px solid #000;
   outline: none;
-  /* background: #00a3a8; */
   resize: none;
   color: #000;
 }
@@ -729,7 +690,6 @@ overflow: hidden;
 	color: rgb(12, 242, 255);
 }
 
-
 /* //-----------------------------------------1200 */
 @media (max-width: 1200px) {
 	.logo img{
@@ -739,7 +699,6 @@ overflow: hidden;
 		font-size: 8em;
 	}
 }
-
  /* //----------------------------------------1080 */
 @media (max-width: 1080px) {
 	.logo img{
@@ -752,15 +711,12 @@ overflow: hidden;
 		font-size: 1em;
 	}
 }
-
  /* //-----------------------------------------1024 */
 @media (max-width: 1024px) {
 	header ul li a{
 		margin: 0 8px;
 	}
 }
-
-
 /* //-------------------------------------------991 */
 @media (max-width: 991px) {
 	
@@ -971,7 +927,6 @@ section {
   font-size: 3em;
 }
 }
-
  /* //----------------------------------------375 */
 @media (max-width: 375px) {
   .swiper-slide
