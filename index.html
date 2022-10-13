@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Отделка балконов</title>
+
+	<link rel="android-chrome-192x192" sizes="192x192" href="favicon/android-chrome-192x192.png">
+	<link rel="android-chrome-512x512" sizes="512x512" href="favicon/android-chrome-512x512.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+ 
+	<link rel="shortcut icon" href="favicon/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<a href="#home" class="logo">
+			<img src="logo.png" />
+		</a>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu">
+			<li><a href="#home" onclick="toggleMenu();">Главная</a></li>
+			<li><a href="#services" onclick="toggleMenu();">Цены</a></li>
+			<li><a href="#work" onclick="toggleMenu();">Портфолио</a></li>
+			<li><a href="#testimonial" onclick="toggleMenu();">Отзывы</a></li>
+			<li><a href="#contact" onclick="toggleMenu();">Контакты</a></li>
+			<li class="li-tel">
+				<a href="tel:+375447863787" class="shake-bottom">
+					<strong>
+						<mark>+375 44 786-37-87</mark>
+					</strong>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+
+	<div class="modal">
+		<div class="modal-box">
+			<div class="modal-exit" onclick="closeModal();">
+				❌
+			</div>
+			<div class="formBx">
+				<form id="form_id">
+					<h3></h3>
+					<input type="text" id="input_text" name="name" placeholder="Имя">
+					<input type="tel" name="phone" id="input_tel" placeholder="Телефон *" required>
+					<textarea name="message" id="input_message" placeholder="Ваше сообщение"></textarea>
+					<button class="modal-btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section class="banner" id="home">
+		<div class="banner-content">
+			<h2></h2>
+		</div>
+		<div class="banner-text">
+			<h3>
+				<span>Выезд</span> на замеры при выполнении работ <span>бесплатный</span>
+			</h3>
+			<button class="btn" onclick="openModal('Заказать');">
+				Заказать
+			</button>
+		</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="about" id="about">
+		<div class="">
+			<p><span>100+</span>&nbsp;&nbsp; выполненых работ</p>
+		</div>
+		<div class="">
+			<p><span>5+</span>&nbsp;&nbsp; лет опыта</p>
+		</div>
+		<div class="">
+			<p><span>10%+</span>&nbsp;&nbsp; скидка по рекомендации</p>
+		</div>
+	</section>
+
+
+	<section class="services" id="services">
+		<div class="heading white">
+			<h2>Цены</h2>
+			<p>от официального диллера</p>
+		</div>
+		<div class="content">
+			<div class="servicesBx">
+				<img src="rama.jpeg">
+				<h2>Балконная рама ПВХ</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Балконную раму ПВХ');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="block.webp">
+				<h2>Балконный блок</h2>
+				<p>от 768 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Балконный блок');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="aluminevaya.png">
+				<h2>Алюминивая рама</h2>
+				<p>от 647 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Алюминивую раму');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="otdelka.webp">
+				<h2>Внутреняя отделка балкона</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Внутренюю отделку балкона');">
+						Заказать
+					</span>
+				</button>
+			</div>
+
+			<div class="servicesBx">
+				<img src="uteplenie.webp">
+				<h2>Утепление балкона</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Утепление балкона');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="narughnaya.webp ">
+				<h2>Наружняя отделка балконов</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Наружнюю отделку балкона');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="krisha.webp">
+				<h2>Крыша на балкон</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Крыша на балкон');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="shakaf.webp">
+				<h2>Шкаф на балкон</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Шкаф на балкон');">
+						Заказать
+					</span>
+				</button>
+			</div>
+			<div class="servicesBx">
+				<img src="cluch.webp">
+				<h2>Балкон под ключ</h2>
+				<p>от 1027 руб.</p>
+				<button class="learn-more">
+					<span class="circle" aria-hidden="true">
+						<span class="icon arrow"></span>
+					</span>
+					<span class="button-text" onclick="openModal('Заказать Балкон под ключ');">
+						Заказать
+					</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="work" id="work">
+		<div class="heading">
+			<h2>Наши работы</h2>
+		</div>
+		<div class="content">
+			<div class="workBx">
+				<img src="rabota-1.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-2.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-3.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-4.jpeg">
+			</div>
+		</div>
+		<div class="content box-2 active">
+			<div class="workBx">
+				<img src="rabota-5.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-6.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-7.jpeg">
+			</div>
+			<div class="workBx">
+				<img src="rabota-8.jpeg">
+			</div>
+		</div>
+		<div class="heading">
+			<button class="btn btn-2" onclick="toggleBlock();">
+				Смотреть больше
+			</button>
+		</div>
+	</section>
+
+
+
+	<section class="testimonial" id="testimonial">
+		<div class="heading">
+			<h2>Отзывы наших клиентов</h2>
+			<p>Положительный отзыв - это не только наша репутация, а также лучшая благодарность за нашу работу. Довольный
+				результатом клиент может порекомендовать нас как хороших специалистов.</p>
+		</div>
+
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="testimonialBox">
+						<img src="img/quote.png" class="quote">
+						<div class="content-swiper">
+							<p>Заказывал услугу балкон под ключ. Меняли окна, утепляли, делали отделку. Ребята приехали на час позже, чем мы договаривались, по отделке притензий нет, результатом я доволен.</p>
+							<div class="details">
+								<div class="imgBx">
+									<img src="img/user-1.webp">
+								</div>
+								<h3>Мигель Олег<br><span>тестировщик ПО</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="testimonialBox">
+						<img src="img/quote.png" class="quote">
+						<div class="content-swiper">
+							<p>Меняли двери и окно на балкон. Порекомендовала коллега на работе. Сразу не заметила, что ручка двери тяжело крутится, позвонила, монтажники очень извенялись и приехали через 30 минут. В целом сделали хорошо, убрали за собой, даже окна помыли.</p>
+							<div class="details">
+								<div class="imgBx">
+									<img src="img/user-2.webp">
+								</div>
+								<h3>Дунец Мария<br><span>Бухгалтер</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<div class="testimonialBox">
+						<img src="img/quote.png" class="quote">
+						<div class="content-swiper">
+							<p>Заказывал изготовление и установку шкафов на балкон. Я человек требовательный, но притензий нет, сделали всё быстро и аккуратно, отдельное спасибо Евгению, хороший и приятный парень, побольше бы таких специалистов. Буду ещё оброщаться.</p>
+							<div class="details">
+								<div class="imgBx">
+									<img src="img/user-3.webp">
+								</div>
+								<h3>Владимир<br><span>Руководитель</span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</section>
+
+
+	<section class="contact" id="contact">
+		<div class="heading white">
+			<h2>Связь с нами</h2>
+			<p>Если у Вас есть вопросы, просто напишите или позвоните нам.</p>
+		</div>
+		<div class="content">
+			<div class="contactInfo">
+				<h3>Наши контакты</h3>
+				<div class="contactInfoBx">
+					<div class="box">
+						<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+						<div class="text">
+							<h3>Адрес</h3>
+							<p></p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+						<div class="text">
+							<h3>Телефон</h3>
+							<p>+375 44 786-37-87</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+						<div class="text">
+							<h3>Режим работы</h3>
+							<p>пн-сб</p>
+							<p>9:00-19:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="formBx">
+				<form id="form_id">
+					<h3>Написать отзыв</h3>
+					<input type="text" id="input_text" name="name" placeholder="Имя">
+					<input type="tel" name="phone" id="input_tel" placeholder="Телефон *" required>
+					<textarea name="message" id="input_message" placeholder="Ваше сообщение"></textarea>
+					<button class="modal-btn" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<div class="copyright">
+		<p class="copirait">Copyright © 2022 | Created &amp; Designed By <a href="https://vi-tech.by"
+				target="_blank"><span style="color: rgb(12, 242, 255);">VI:TECH</span></a></p>
+	</div>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 0,
+				stretch: 0,
+				depth: 100,
+				modifier: 2,
+				slideShadows: true,
+			},
+			loop: true,
+		});
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("scroll", function () {
+			var header = document.querySelector("header");
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		function toggleMenu() {
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu');
+			menuToggle.classList.toggle('active');
+			menu.classList.toggle('active');
+		}
+
+		function toggleBlock() {
+			const box = document.querySelector('.box-2').classList.toggle('active')
+			const btn = document.querySelector('.btn-2')
+			if (!box) btn.innerHTML = "Свернуть"
+			else btn.innerHTML = "Смотреть больше"
+		}
+
+		function openModal(props) {
+			document.querySelector('.modal').classList.add('active')
+			document.querySelector('.modal-box h3').innerHTML = `${props}`
+
+
+			document.getElementById('form_id').addEventListener('submit', function (e) {
+				e.preventDefault()
+				let messageForm = `<b>Заказ с сайта</b>\n`
+				messageForm += `<b> </b>\n`
+				messageForm += `<b>Интересует: </b> ${props}\n`
+				messageForm += `<b>Сообщение: </b> <i>«${this.message.value}»</i>\n`
+				messageForm += `<b> </b>\n`
+				messageForm += `<b>Отправитель: </b> ${this.name.value}\n`
+				messageForm += `<b>Телефон: </b> ${this.phone.value}\n`
+
+				axios.post(uri_api, {
+					chat_id,
+					parse_mode: 'html',
+					text: messageForm,
+				}).then(data => {
+					setTimeout(() => {
+						closeModal()
+					}, 2000)
+				}).then(data => {
+					document.getElementById('input_text').value = ''
+					document.getElementById('input_tel').value = ''
+					document.getElementById('input_message').value = ''
+				})
+			})
+
+		}
+		const closeModal = () => document.querySelector('.modal').classList.remove('active')
+
+
+		const token = '5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko'
+		const chat_id = '-1001794221917'
+		const uri_api = `https://api.telegram.org/bot${token}/sendMessage`
+
+
+
+
+		//ищем бота BotFather > нажимаем запустить (/newbot) > name bot: "business" > username: "business022_bot" -->
+		// --> копируем token HTTP API (пример токена "5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko" ) и отправляем мне в телеге
+
+		//надо создать канал название "Заявки с сайта HOMELINESS" > выбираем частный канал > добавить участника "пропустить" -->
+		// --> три точки вверху справа Управление каналом > подписчики > добавить > вставляем в поиск business022_bot, выбираем его и нажимаем кнопку "добавить" -->
+		//--> Бота можно добавить как администратора нажимаем "назначить" > следующее окно нажимаем "сохранить" > отправляем "q"
+
+		//ищем нового бота > Get My ID (@getmyid_bot) > нажимаем "запустить" > получаем your user ID, current chat id -->
+		//--> заходим в "Заявки с сайта HOMELINESS" > переслать сообщение "q" боту Get My ID > заходим Get My ID и смотрим your user ID, current chat id, forwarded from chat: -1... -->
+		//копируем forwarded from chat (пример: -1001794221917) и отправляем мне в телеге.
+		// мне нужны токен и номер чата (пример: "5562126487:AAGqX2TBd3toX15OgSCQ2yW55RNfgtBWQko", " -1001794221917")
+	</script>
+
+</body>
+
+</html>
