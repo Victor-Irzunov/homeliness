@@ -75,7 +75,7 @@ section
   padding: 50px 100px;
 }
 .li-tel a{
-	background: rgb(238, 255, 0);
+	background: #eeff00;
 	padding: 0px 5px 0px 5px;
 	overflow: hidden;
 }
@@ -200,8 +200,16 @@ padding: 20px 20px 20px 20px;
 	  content: "ОСТЕКЛЕНИЕ";
 	}
 	50%{
-	  content: "БАЛКОНОВ";
+	  content: "УТЕПЛЕНИЕ";
 	}
+  75%{
+    content: "БАЛКОНОВ"
+  }
+ }
+ .banner h1{
+  font-size: 3em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 0 #00a3a8, 2px -2px 0 #00a3a8, -2px 2px 0 #00a3a8, -2px -2px 0 #00a3a8, 2px 0px 0 #00a3a8, 0px 2px 0 #00a3a8, -2px 0px 0 #00a3a8, 0px -2px 0 #00a3a8;
  }
 .btn
 {
