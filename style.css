@@ -138,6 +138,7 @@ padding: 20px 20px 20px 20px;
 	text-transform: uppercase;
 	font-size: 1em;
 	border: 1px solid #000;
+  color: #000;
   max-width: 180px;
 }
 .modal-btn:hover{
