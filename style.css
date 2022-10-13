@@ -238,6 +238,10 @@ padding: 20px 20px 20px 20px;
 .btn:hover{
 	transform: scale(1.1);
 }
+.btn-2{
+  color: #00a3a8;
+  border: 1px solid #00a3a8;
+}
 .content
 {
   display: flex;
@@ -931,7 +935,7 @@ overflow: hidden;
 .about p{
   font-size: 1.2em;
 }
-.about div:nth-child(2) p span{
+.about div:nth-child(1) p span{
   margin-right: .9em;
 }
 section {
@@ -941,6 +945,18 @@ section {
   font-size: 1.3em;
   top: -26px;
   right: -20px;
+}
+.contact .heading h2{
+  font-size: 3em;
+}
+.testimonialBox{
+  padding: 30px 40px 30px;
+}
+.content-swiper{
+  padding: 0px 10px 0px 10px;
+}
+.testimonial h2, .services .heading h2,.work .heading h2{
+  font-size: 3em;
 }
 }
 
