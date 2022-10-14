@@ -922,6 +922,9 @@ overflow: hidden;
 }
 }
 @media (max-width: 428px){
+  .banner h1 {
+    font-size: 2.2em;
+}
   .banner h2 {
     font-size: 3em;
 }
@@ -935,7 +938,7 @@ overflow: hidden;
   font-size: 1.2em;
 }
 .about div:nth-child(1) p span{
-  margin-right: .9em;
+  margin-right: .5em;
 }
 section {
   padding: 50px 20px;
