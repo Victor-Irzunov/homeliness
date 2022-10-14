@@ -149,7 +149,7 @@ padding: 20px 20px 20px 20px;
   position: relative;
   min-height: 100vh;
   background: #111;
-  background: url(lodgiya.jpeg);
+  background: url(./images/lodgiya.jpeg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -192,7 +192,7 @@ padding: 20px 20px 20px 20px;
 }
 #home .banner-content h2:after{
 	content: "ОТДЕЛКА";
-	animation: textanim 5s linear infinite;
+	animation: textanim 6s linear infinite;
  }
  
  @keyframes textanim{
@@ -203,11 +203,16 @@ padding: 20px 20px 20px 20px;
 	  content: "УТЕПЛЕНИЕ";
 	}
   75%{
-    content: "БАЛКОНОВ"
+    content: "ШКАФЫ"
+  }
+  100%{
+    content: "КРЫШИ"
   }
  }
  .banner h1{
   font-size: 3em;
+  /* font-family: 'Roboto', sans-serif; */
+
   color: #FFFFFF;
   text-shadow: 2px 2px 0 #00a3a8, 2px -2px 0 #00a3a8, -2px 2px 0 #00a3a8, -2px -2px 0 #00a3a8, 2px 0px 0 #00a3a8, 0px 2px 0 #00a3a8, -2px 0px 0 #00a3a8, 0px -2px 0 #00a3a8;
  }
@@ -229,10 +234,12 @@ padding: 20px 20px 20px 20px;
 .btn:hover{
 	transform: scale(1.1);
 }
-.btn-2{
+/* .heading .btn-style{
+  text-align: center;
+} */
+.btn-style{
   color: #00a3a8;
   border: 1px solid #00a3a8;
-  margin-top: 20px;
   padding: 10px 30px;
   font-size: 1em;
   text-transform: uppercase;
@@ -242,7 +249,28 @@ padding: 20px 20px 20px 20px;
   margin-top: 2em;
   transition: .5s;
 }
-.btn-2:hover{
+.btn-2 {
+  display: inline-block;
+  margin-right: 1em;
+}
+.btn-2.active{
+  display: none;
+}
+.btn-2 svg{
+  transform: rotate(90deg);
+  vertical-align: sub;
+}
+.btn-3{
+  display: none;
+}
+.btn-3.active{
+  display: inline-block;
+}
+.btn-3 svg{
+  transform: rotate(-90deg);
+  vertical-align: sub;
+}
+.btn-style:hover{
 	transform: scale(1.1);
 }
 .content
@@ -265,15 +293,12 @@ padding: 20px 20px 20px 20px;
 	display: flex;
 	align-items: center;
 	color:#000;
-
+  text-shadow: 1px 13px 5px #aba8a8;
 
 	/* color: transparent;
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: linear-gradient(to right, #02aab0, #00cdac); */
-
-
-
 
 }
 .about span{
@@ -584,6 +609,13 @@ overflow: hidden;
 {
   background: #00a3a8;
 }
+.contact .box .text p{
+  font-size: 1.2em;
+}
+.shake-bottom{
+  text-decoration: none;
+  color: #000;
+}
 .contact .heading h2{
 	color: #000;
 	font-weight: 100;
@@ -702,6 +734,9 @@ overflow: hidden;
 .copirait span{
 	color: rgb(12, 242, 255);
 }
+
+
+
 @media (max-width: 1200px) {
 	.logo img{
 		width: 13em;
@@ -774,14 +809,14 @@ overflow: hidden;
   {
     width: 40px;
     height: 40px;
-    background: url(menu.png);
+    background: url(images/menu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
   }
   .toggle.active
   {
-    background: url(close.png);
+    background: url(images/close.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -913,6 +948,7 @@ section {
 .contact .heading h2{
   font-size: 3em;
 }
+
 .testimonialBox{
   padding: 30px 40px 30px;
 }
